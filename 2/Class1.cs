@@ -8,13 +8,10 @@ namespace _2
 {
     internal class Temperatura
     {
-       public void ConversorParaCelsius()
+        public int TemperaturaFahrenheit;
+        public double ConversorParaCelsius()
         {
-            int TemperaturaFahrenheit;
-          
-            Console.WriteLine("Insira a temperatura em Fahrenheint");
-            TemperaturaFahrenheit = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("A Temperatura em Celsius é de " + ((TemperaturaFahrenheit - 32) / 1.8) + "°C");
+           return ((TemperaturaFahrenheit - 32) / 1.8);
         }
 
     }
